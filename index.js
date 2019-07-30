@@ -7,13 +7,14 @@ import {
 } from 'react-native-navigation';
 import App from './App';
 import Home from './src/Components/Home';
+import Search from './src/Components/Search';
 
 const homeIcon = require('./src/Asset/Images/home_icon.png');
 const profileIcon = require('./src/Asset/Images/account_icon.png');
 const searchIcon = require('./src/Asset/Images/search_icon.png');
 
 Navigation.registerComponent(`HOME_PAGE`, () => Home);
-Navigation.registerComponent(`SEARCH_PAGE`, () => App);
+Navigation.registerComponent(`SEARCH_PAGE`, () => Search);
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
