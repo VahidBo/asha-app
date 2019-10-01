@@ -51,7 +51,8 @@ export default class Search extends Component<Props> {
                 marginRight: 4,
                 marginTop: 4,
                 overflow: 'hidden',
-              }}>
+              }}
+              >
               <Image
                 source={require('../Asset/Images/shooting.jpeg')}
                 resizeMode="cover"

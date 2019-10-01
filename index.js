@@ -7,6 +7,7 @@ import { Navigation } from "react-native-navigation";
 import Home from "./src/Components/Home";
 import Search from "./src/Components/Search";
 import NewPost from "./src/Components/NewPost";
+import Profile from "./src/Components/Profile";
 
 const homeIcon = require("./src/Asset/Images/icons/home_icon.png");
 const profileIcon = require("./src/Asset/Images/icons/account_icon.png");
@@ -15,6 +16,8 @@ const searchIcon = require("./src/Asset/Images/icons/search_icon.png");
 Navigation.registerComponent(`HOME_PAGE`, () => Home);
 Navigation.registerComponent(`SEARCH_PAGE`, () => Search);
 Navigation.registerComponent(`NEW_POST`, () => NewPost);
+Navigation.registerComponent(`PROFILE`, () => Profile);
+
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
@@ -79,7 +82,7 @@ Navigation.events().registerAppLaunchedListener(() => {
           },
           {
             component: {
-              name: "SEARCH_PAGE",
+              name: "PROFILE",
               options: {
                 bottomTab: {
                   text: "profile",
